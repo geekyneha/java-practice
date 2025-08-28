@@ -1,0 +1,6 @@
+What will be the type of result in thefollowing Java code?(Hint : Look at the largest data type among these)
+
+
+5:(Advanced)Will the following statementgive any error in Java?int$=24;
+
+No. $ and underscore are valid 
