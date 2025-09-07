@@ -118,6 +118,73 @@ public class Patterns {
           System.out.println();
         }
     }
+
+    public static void solid_rhombus(int n){
+       System.out.println("Pattern : solid rhombus");
+        for(int i=1; i <=n ; i++){
+            for(int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j = 1; j<=n ; j++){
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void hollow_rhombus(int n){
+        System.out.println("Hollow rhombus");
+    
+        
+        for(int i = 1; i <=n ; i++){
+            // hollow rhombus
+            for (int j = 1; j <= n-i; j++){
+                 System.out.print("  ");
+            }
+
+            for(int j = 1; j <= n ; j++){
+
+                if(i== 1 || j==1 || i == n ||  j==n){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+
+            }
+
+        System.out.println();
+        }
+    }
+
+    public static void diamond(int n){
+
+        System.out.println("Diamond");
+        for(int i= 1; i <=n ; i++){
+            for(int j = 1; j<=n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j = 1; j <= 2*i - 1 ; j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+
+
+         for(int i= n; i >=1 ; i--){
+            for(int j = 1; j<=n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j = 1; j <= 2*i - 1 ; j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
 
         hollowrectangle(4,5);
@@ -126,6 +193,9 @@ public class Patterns {
         floydsTriangle(5);
         triangle01(5);
         butterflyPattern(4);
+        solid_rhombus(5);
+        hollow_rhombus(5);
+        diamond(5);
         
     }
     
