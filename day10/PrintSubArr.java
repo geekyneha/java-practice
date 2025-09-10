@@ -20,6 +20,7 @@ public class PrintSubArr {
                     sum=sum+arr[k];
                     
                 }
+                
 
                 if(sum>maxSum){
                         maxSum=sum;
@@ -27,6 +28,7 @@ public class PrintSubArr {
                 System.out.println();
 
             }
+            
             System.out.println();
         }
 
