@@ -11,7 +11,7 @@ public class InsertionSort {
             int prev = i-1;
 
             // finding the correct position for curr
-            while(prev >= 0 && arr[prev] > curr){
+            while(prev >= 0 && arr[prev] < curr){
                 arr[prev+1] = arr[prev];
                 prev--;
             }
@@ -22,7 +22,7 @@ public class InsertionSort {
         
     }
     public static void main(String[] args) {
-        int arr[] = {5,4,3,2,1};
+        int arr[] = {3,6,2,1,8,7,4,5,3,1};
 
         insertionsort(arr);
 
