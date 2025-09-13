@@ -13,7 +13,7 @@ public class SelectionSort {
             int smallest = i;
 
             for(int j = i+1; j < n ; j++){
-                if(arr[j] < arr[smallest]){
+                if(arr[j] > arr[smallest]){
                     smallest = j;
                 }
             }
@@ -28,7 +28,7 @@ public class SelectionSort {
 
     }
     public static void main(String[] args) {
-        int arr[] = {5,4,3,2,1};
+        int arr[] = {3,6,2,1,8,7,4,5,3,1};
 
        selectionsort(arr);
 
