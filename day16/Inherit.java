@@ -1,6 +1,6 @@
 package day16;
 
-public class Inhertance {
+public class Inherit {
 
     public static void main( String args[]){
 
