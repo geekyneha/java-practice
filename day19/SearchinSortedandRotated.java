@@ -31,7 +31,7 @@ public class SearchinSortedandRotated {
     }
 
     public static void main(String[] args) {
-        int arr[] = {4,5,6,7,0,1,2};
+        int arr[] = {1,2,3,4,5,7};
         int target = 0;
         int result = search(arr, target, 0, arr.length - 1);
         if(result != -1){
