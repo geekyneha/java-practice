@@ -1,5 +1,6 @@
 package day22;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SwapNum {
 
@@ -26,7 +27,9 @@ public class SwapNum {
 
         swapIndex(0,3,list);
 
-        System.out.println("Final ArrayList: " + list);
+        Collections.sort(list);
+       
+        System.out.println("Sorted ArrayList: " +  list);
 
 
 
