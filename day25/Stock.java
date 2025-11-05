@@ -23,8 +23,8 @@ public class Stock {
     public static void main(String[] args){
 
         int[] prices = {100,80,60,70,60,75,85};
-        int n = prices.length;
-        int [] span = new int[n];
+        int[] span = new int[prices.length];                                  
+      
 
 
 
