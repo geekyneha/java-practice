@@ -9,6 +9,8 @@ public class Stock {
         span[i] = 1; // Initialize span for each day
         for(int j=i-1; j>=0 && prices[j] <= prices[i]; j--){ // Check previous days
             span[i]++;
+
+            
         }
         
       }
@@ -23,7 +25,7 @@ public class Stock {
     public static void main(String[] args){
 
         int[] prices = {100,80,60,70,60,75,85};
-        int[] span = new int[prices.length];                                  
+                                         
       
 
 
