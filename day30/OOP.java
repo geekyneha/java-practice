@@ -23,6 +23,11 @@ public class OOP{
            System.out.println("Tip size of p2: " + p2.getTipSize()); 
         p2.changeTipSize(10);
         System.out.println("Tip size of p2: " + p2.getTipSize()); 
+
+        Calculator calc = new Calculator();
+        System.out.println(calc.sum(2,3));
+        System.out.println(calc.sum(1,23,4));
+        System.out.println(calc.sum(1.2f,1.5f));
         
     }
 
@@ -80,22 +85,21 @@ class Student{
 
     }
 
-    class Calculator{
-
-        int sum(int a, int b){
-            return a+b;
-        }
-        int sum(int a, int b, int c){
-            return a+b+c;
-
-        }
-        float sum( float a, float b){
-            return a+b;
-        }
-
-    }
+    
 
 
 }
+// Method Overloading: When multiple methods have the same name but different parameters (different type or number of parameters) in the same class, it is known as method overloading.
+class Calculator{
+    int sum( int a, int b){
+        return a+b;
+    }
 
+    int sum(int a, int b, int c){
+        return a+b+c;
+    }
 
+    float sum (float a, float b){
+        return a+b;
+    }
+}
