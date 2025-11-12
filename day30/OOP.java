@@ -28,6 +28,9 @@ public class OOP{
         System.out.println(calc.sum(2,3));
         System.out.println(calc.sum(1,23,4));
         System.out.println(calc.sum(1.2f,1.5f));
+
+         Horse mustang = new Horse();
+         mustang.eat();
         
     }
 
@@ -102,4 +105,21 @@ class Calculator{
     float sum (float a, float b){
         return a+b;
     }
+}
+
+// Method Overriding: When a subclass provide specific implementation of a method that is already defined in its superclass, it is knnown as method overriding. Method defined in subclass overrides the method in superclass and when the method is called on an object of subclass, the subclass's version of the method is executed.
+class Animal{
+
+    void eat(){
+        System.out.println("eats anyting");
+    }
+
+}
+class Horse extends Animal{
+
+    void eat(){
+        System.out.println("eats grass");
+
+    }
+
 }
