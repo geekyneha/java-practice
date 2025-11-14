@@ -31,6 +31,15 @@ public class OOP{
 
          Horse mustang = new Horse();
          mustang.eat();
+
+         Dog labrador = new Dog();
+            labrador.makeSound();
+            labrador.bark();
+            labrador.walk();
+
+        Animal1 a1 = new Dog();
+        a1.makeSound();
+        a1.walk();    
         
     }
 
@@ -108,10 +117,17 @@ class Calculator{
 }
 
 // Method Overriding: When a subclass provide specific implementation of a method that is already defined in its superclass, it is knnown as method overriding. Method defined in subclass overrides the method in superclass and when the method is called on an object of subclass, the subclass's version of the method is executed.
+// It is a runtime polymorphism because the method to be executed is determined at runtime based on the object type.
 class Animal{
 
     void eat(){
         System.out.println("eats anyting");
+    }
+    void sleep(){
+        System.out.println("sleeps 8 hours");
+    }
+    void walk(){
+        System.out.println("walks on 4 legs");
     }
 
 }
@@ -121,5 +137,25 @@ class Horse extends Animal{
         System.out.println("eats grass");
 
     }
+   
 
+}
+
+abstract class Animal1{
+    void makeSound(){
+        System.out.println("Animal makes a sound");
+    }
+
+    abstract void walk();
+
+}
+
+class Dog extends Animal1{
+    void bark(){
+        System.out.println("Dog barks");
+    }
+
+    void walk(){
+        System.out.println("Dog walks on 4 legs");
+    }
 }
