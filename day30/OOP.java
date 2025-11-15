@@ -119,7 +119,9 @@ class Calculator{
 // Method Overriding: When a subclass provide specific implementation of a method that is already defined in its superclass, it is knnown as method overriding. Method defined in subclass overrides the method in superclass and when the method is called on an object of subclass, the subclass's version of the method is executed.
 // It is a runtime polymorphism because the method to be executed is determined at runtime based on the object type.
 class Animal{
-
+     Animal(){
+        System.out.println("Animal constructor called");
+     }
     void eat(){
         System.out.println("eats anyting");
     }
@@ -132,7 +134,9 @@ class Animal{
 
 }
 class Horse extends Animal{
-
+     Horse(){
+        System.out.println("Horse constructor called");
+     }
     void eat(){
         System.out.println("eats grass");
 
@@ -142,6 +146,9 @@ class Horse extends Animal{
 }
 
 abstract class Animal1{
+    Animal1(){
+        System.out.println("Animal1 constructor called");
+    }
     void makeSound(){
         System.out.println("Animal makes a sound");
     }
@@ -151,6 +158,9 @@ abstract class Animal1{
 }
 
 class Dog extends Animal1{
+    Dog(){
+        System.out.println("Dog constructor called");
+    }
     void bark(){
         System.out.println("Dog barks");
     }
@@ -159,3 +169,29 @@ class Dog extends Animal1{
         System.out.println("Dog walks on 4 legs");
     }
 }
+
+
+// Interface: It is a blueprint of a class that defines a set of abstract methods method without body that a class must implement. It is used to achieve abstraction and multiple inheritance in Java. Abstact classes can have both abstract and concrete methods, whereas interface can have abstract and public methods only. It can have final, static and public variables only. A class can implement multiple interfaces, but can extend only one class. It is used to achieve total abstraction.
+
+interface Herbivore{
+    void eatPlants();
+
+}
+
+interface Carnivore{
+    void eatMeat();
+
+}
+class Bear implements Herbivore, Carnivore{
+
+    public void eatPlants(){
+        System.out.println("Bear eats plants");
+    }
+    
+    public void eatMeat(){
+        System.out.println("Bear eats meat");
+    }
+
+}
+
+
