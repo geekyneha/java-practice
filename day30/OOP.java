@@ -39,8 +39,24 @@ public class OOP{
 
         Animal1 a1 = new Dog();
         a1.makeSound();
-        a1.walk();    
+        a1.walk();
         
+        Employee.company = "TechCorp";
+        Employee emp1 = new Employee();
+        emp1.id = 101;
+        emp1.name = "John Doe";
+        double salary = Employee.calcSalary(50000, 10000);
+        System.out.println("Employee Name: " + emp1.name);
+        System.out.println("Company: " + Employee.company);
+        System.out.println("Salary: " + salary);
+        
+        Employee emp2 = new Employee();
+        emp2.id = 102;
+        emp2.name = "Jane Smith";
+        double salary2 = Employee.calcSalary(60000, 15000);
+        System.out.println("Employee Name: " + emp2.name);
+        System.out.println("Company: " + Employee.company);
+        System.out.println("Salary: " + salary2);
     }
 
 
@@ -193,5 +209,18 @@ class Bear implements Herbivore, Carnivore{
     }
 
 }
+
+// Static members: Static members belong to the class rather than to any specific instance of the class. They are shared among all instances of the class and can be accessed without creating an object of the class. Static members are used to store common data or behavior that is shared among all instances of the class.
+class Employee{
+    int id;
+    String name;
+
+   static String company; 
+
+   static double calcSalary(int basic, int bonus){
+    return basic+ bonus;
+   }
+
+} 
 
 
